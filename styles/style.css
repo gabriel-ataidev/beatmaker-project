@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i, svg {
+  pointer-events: none;
+}
+
+.kick-pad, .snare-pad, .hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: #07612f;
+}
+
+.kick-pad.active {
+  background: #054120;
+}
+
+.snare-pad {
+  background: #086e5d;
+}
+
+.snare-pad.active {
+  background: #05443a;
+}
+
+.hihat-pad {
+  background: #083968;
+}
+
+.hihat-pad.active {
+  background: #062a4b;
+}
+
+.sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kick-track, .snare-track, .hihat-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.kick, .snare, .hihat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 10rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: #b8b5b5;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.controls select {
+  padding: 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.pad {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #b8b5b5;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

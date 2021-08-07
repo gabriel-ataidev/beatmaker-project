@@ -1,0 +1,96 @@
+$kick-color: rgb(7, 97, 47);
+$kick-color-s: rgb(5, 65, 32);
+$snare-color: rgb(8, 110, 93);
+$snare-color-s: rgb(5, 68, 58);
+$hihat-color: rgb(8, 57, 104);
+$hihat-color-s: rgb(6, 42, 75);
+$button-color: rgb(184, 181, 181);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+i, svg{
+    pointer-events: none;
+}
+.kick-pad, .snare-pad, .hihat-pad{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+.kick-pad{
+    background: $kick-color;
+    &.active{
+        background: $kick-color-s;
+    }
+}
+.snare-pad{
+    background: $snare-color;
+    &.active{
+        background: $snare-color-s;
+    }
+}
+.hihat-pad{
+    background: $hihat-color;
+    &.active{
+        background: $hihat-color-s;
+    }
+}
+.sequencer{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kick-track, .snare-track, .hihat-track{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+.kick, .snare, .hihat{
+    display: flex;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0 10rem;
+    button{
+        padding: 1rem;
+        border: none;
+        border-radius: 1rem;
+        background: $button-color;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    select{
+        padding: 1rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+.pad{
+    transition: all 0.5s ease ;
+}
+.play{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: $button-color;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 3rem;
+}
