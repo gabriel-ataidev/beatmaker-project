@@ -21,7 +21,7 @@ i, svg {
 }
 
 .kick-pad {
-  background: #07612f;
+  background: #098842;
 }
 
 .kick-pad.active {
@@ -29,7 +29,7 @@ i, svg {
 }
 
 .snare-pad {
-  background: #086e5d;
+  background: #0c967f;
 }
 
 .snare-pad.active {
@@ -37,7 +37,7 @@ i, svg {
 }
 
 .hihat-pad {
-  background: #083968;
+  background: #0d579c;
 }
 
 .hihat-pad.active {
@@ -133,5 +133,27 @@ i, svg {
   border-radius: 1rem;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
-$kick-color: rgb(7, 97, 47);
+$kick-color: rgb(9, 136, 66);
 $kick-color-s: rgb(5, 65, 32);
-$snare-color: rgb(8, 110, 93);
+$snare-color: rgb(12, 150, 127);
 $snare-color-s: rgb(5, 68, 58);
-$hihat-color: rgb(8, 57, 104);
+$hihat-color: rgb(13, 87, 156);
 $hihat-color-s: rgb(6, 42, 75);
 $button-color: rgb(184, 181, 181);
 *{
@@ -94,4 +94,13 @@ i, svg{
     border-radius: 1rem;
     cursor: pointer;
     margin-top: 3rem;
+}
+
+@keyframes playTrack{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }
