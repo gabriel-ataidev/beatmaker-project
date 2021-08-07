@@ -59,6 +59,7 @@ i, svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 5rem;
 }
 
 .kick-track, .snare-track, .hihat-track {
