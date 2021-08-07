@@ -56,6 +56,7 @@ i, svg{
     width: 100%;
     justify-content: space-evenly;
     margin-top: 5rem;
+
 }
 .kick, .snare, .hihat{
     display: flex;
@@ -99,6 +100,24 @@ i, svg{
 }
 .mute.active{
     background: $button-color-s;
+}
+.tempo{
+    margin: 3rem;
+    width: 30%;
+    .tempo-slider{
+        padding: 0.2rem 0.3rem;
+        appearance: none;
+        margin: 1rem 0rem;
+        width: 100%;
+        position: relative;
+        background: $button-color;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
 
 @keyframes playTrack{

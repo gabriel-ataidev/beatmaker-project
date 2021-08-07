@@ -140,6 +140,29 @@ i, svg {
   background: #504f4f;
 }
 
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo .tempo-slider {
+  padding: 0.2rem 0.3rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #b8b5b5;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 @-webkit-keyframes playTrack {
   from {
     -webkit-transform: scale(1);
