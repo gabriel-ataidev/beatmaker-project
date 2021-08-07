@@ -5,6 +5,7 @@ $snare-color-s: rgb(5, 68, 58);
 $hihat-color: rgb(13, 87, 156);
 $hihat-color-s: rgb(6, 42, 75);
 $button-color: rgb(184, 181, 181);
+$button-color-s: rgb(80, 79, 79);
 *{
     margin: 0;
     padding: 0;
@@ -80,6 +81,7 @@ i, svg{
         margin-left: 1rem;
         font-size: 1rem;
         border-radius: 0.5rem;
+        cursor: pointer;
     }
 }
 .pad{
@@ -94,6 +96,9 @@ i, svg{
     border-radius: 1rem;
     cursor: pointer;
     margin-top: 3rem;
+}
+.mute.active{
+    background: $button-color-s;
 }
 
 @keyframes playTrack{

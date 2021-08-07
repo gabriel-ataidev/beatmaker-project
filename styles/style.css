@@ -117,6 +117,7 @@ i, svg {
   margin-left: 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .pad {
@@ -133,6 +134,10 @@ i, svg {
   border-radius: 1rem;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+.mute.active {
+  background: #504f4f;
 }
 
 @-webkit-keyframes playTrack {
